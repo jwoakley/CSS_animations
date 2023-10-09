@@ -1,0 +1,301 @@
+/* ======================================
+   Global CSS Reset
+====================================== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ====================================
+     base styles
+    ==================================*/
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  background-color: #333333;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+
+.sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border-bottom: 3px double white; */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.columnOne {
+  text-align: start;
+  width: 50%;
+  margin-right: 2%;
+  margin-bottom: 2.5%;
+}
+
+.columnTwo {
+  text-align: start;
+  width: 50%;
+  margin-left: 2%;
+  margin-bottom: 2.5%;
+  padding: 3%;
+  border: 3px double #008B8B;
+  background-color: white;
+  color: black;
+}
+
+.special {
+  margin-left: 10%;
+  margin-bottom: 15%;
+}
+
+/* =========== typography============= */
+
+h1 {
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 2.5%;
+  /* text-align: start; */
+  margin-left: 10%;
+  font-size: 2em;
+
+}
+
+h3 {
+  margin-left: 10%;
+}
+
+
+
+h4 {
+  background-color: white;
+  color: #008B8B;
+  font-size: 2em;
+  border-top: 1px solid #008B8B;
+  border-bottom: 1px solid #008B8B;
+  padding: .5%;
+  padding-left: 10%;
+  margin-bottom: 5%;
+  text-align: start;
+}
+
+
+
+p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  padding-left: 10%;
+}
+
+strong {
+  color: #FF00FF;
+}
+
+#start {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+}
+
+a {
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #008B8B;
+  margin: 2.5%;
+  padding: .5%;
+  letter-spacing: .15em;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+a:hover {
+  color: #008B8B;
+  border: 1px solid #008B8B;
+  background-color: white;
+}
+
+#start a:hover {
+  color: #008B8B;
+  border: 1px solid #008B8B;
+  background-color: white;
+}
+
+
+
+.button {
+  margin-top: 5%;
+  border: 1px solid black;
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+}
+
+code {
+  background-color: white;
+  color: black;
+  padding: 1.5%;
+  border: 1px solid #008B8B;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1.5%;
+}
+
+li {
+  margin-bottom: 4%;
+}
+
+#opening {
+  text-align: center;
+  -webkit-animation-name: uponAnimate;
+          animation-name: uponAnimate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+          animation-fill-mode: backwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+  }
+
+
+
+#rotate {
+  margin-left: 10%;
+  font-size: 1.5em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid #008B8B;
+  background-color: white;
+  color: black;
+  text-align: center;
+  transition-duration: 1s;
+}
+
+#scale {
+  margin-left: 10%;
+  font-size: 1.5em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid #008B8B;
+  background-color: white;
+  color: black;
+  text-align: center;
+  transition-duration: 2s;
+}
+
+#skew {
+  margin-left: 10%;
+  font-size: 1.5em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid #008B8B;
+  background-color: white;
+  color: black;
+  text-align: center;
+  transition-duration: 3s;
+}
+
+#translate {
+  margin-left: 10%;
+  font-size: 1.5em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid #008B8B;
+  background-color: white;
+  color: black;
+  text-align: center;
+  transition-duration: 4s;
+}
+
+
+#rotate:hover {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#scale:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+#skew:hover {
+  transform: skew(15deg, 10deg);
+  -webkit-transform: skew(15deg, 10deg);
+  -moz-transform: skew(15deg, 10deg);
+  -ms-transform: skew(15deg, 10deg);
+  -o-transform: skew(15deg, 10deg);
+}
+
+#translate:hover {
+  transform: translate(500px, 10px);
+  -webkit-transform: translate(500px, 10px);
+  -moz-transform: translate(500px, 10px);
+  -ms-transform: translate(500px, 10px);
+  -o-transform: translate(500px, 10px);
+}
+
+/* animations go at the bottom of the css page */
+
+
+@keyframes uponAnimate {
+  from {
+    background-color: white;
+    border-top: 2px double #008B8B;
+    border-bottom: 2px double #008B8B;
+    color: #008B8B;
+  }
+  to {
+    color: white;
+    background-color: #008B8B;
+    border-top: 2px double white;
+    border-bottom: 2px double white;
+    font-stretch: ultra-expanded;
+    transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1.25, 1.25);
+    -moz-transform: scale(1.25, 1.25);
+    -ms-transform: scale(1.25, 1.25);
+    -o-transform: scale(1.25, 1.25);
+}
+}
+
+
+

@@ -1,0 +1,97 @@
+/* basic styling for the Animations Intro Page */
+.row {
+    margin-bottom: 25%;
+}
+p {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+code {
+    border: none;
+    font-size: 1.35em;
+}
+h3 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    border: none;
+}
+em {
+    color: darkorchid;
+}
+.blue {
+    color: blue;
+}
+.red {
+    color: #ff0000;
+}
+.green {
+    color: #008B8B;
+}
+li {
+    margin-left: 15%;
+    list-style: circle;
+    font-size: 1.15em;
+}
+
+
+
+/* ============== Let's Start Down Here============== */
+
+/* first off we need to build our conditional statement, right?
+
+ Remember all conditional statements go at the bottom of the CSS file.
+
+1. build a conditional statement and name the animation introAnimate
+
+2. start off simple, in the "from" give it a background color of #333333
+
+3. in the "to" give the background color a white fill.
+
+
+what this is saying is: I want the screen to go "from" charcoal grey and I want it "to" go to a white screen
+*/
+
+/* okay, but nothing is happening - how do we get the animation to work? We have to address part two, where and what do we want to animate? */
+
+/* we want to animate #row */
+
+#row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: #333333;
+    font-size: 50px;
+/* 1. this is where we target our animation, remember to start with animation-name, and then call each property you need in alphabetical order. lets do no delay, 5s timing, forwards, once and ease-in and see ehat  that looks like. */
+
+}
+
+
+/* 2. now that we have built an animation for the #row, let's get a little more specific and add in a second animation for .once that brings the text in from the right, pushes it all the way to the left and makes it rotate while its moving */
+
+/* .once {
+
+} */
+
+/*  ====================== */
+
+/* 3. homework */
+/* add in at least one more <div> and animate it.
+
+Explore all the animation properties: use words from your community project. This is the point where https://codepen.io/tag/css-animation is going to be your best friend.
+
+expirement with the parent-child relationship and how responsive elements affect animations*/
+
+/* ============================= */
+
+/* ======= keyframes go below here  ======= */
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.typekit.net/xih6dhg.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<link rel="stylesheet" href="css/animations.css">
+
+	<title>CSS Animation Intro
+	</title>
+</head>
+
+<body>
+
+	<h1>Advanced CSS Part 2</h1>
+
+	<div class="sections">
+		<a href="/transitionsReview/transisitions.html">transitions review</a>
+		<a href="/animations/animations.html">animation intro</a>
+	</div>
+	
+	<a id="start" href="../index.html">home</a>
+
+	<h4 id="opening">css animations - make it move!</h4>
+
+	<h2>The trick to animations is in the syntax</h2>
+	<div class="row">
+		<div class="columnOne">
+			<p>To start using animations we must first learn about the syntax. We are moving into new territory here. Those of you with a little CS experience may be familiar with the following term:</p><br>
+			<h3><strong>Conditional Statement</strong></h3>
+			<br>
+			<p>A conditional statement is a statement that describes the relationship between two events based on certain conditions. It's also known as an<strong>"if-then statement"</strong>.</p>
+		</div>
+
+		<div class="columnTwo">
+			<h2><strong>conditional statements</strong></h2>
+			<br>
+			<code>
+				<h3 class="blue">@keyframes introAnimate {</h3>
+					<br>
+					<h3 class="red"> from {
+						<br>
+							color: #FF00FF;
+							<br>
+						}<br>
+					</h3>
+						<h3 class="green">to {
+							<br>
+							color: #008B8B;
+							<br>
+						}<br>
+					</h3>
+						<h3 class="blue">}</h3>	
+			</code>
+			<p>Pay extra close attention to this set up. Do you notice how many sets of brackets there are?</p>	
+		</div>
+		</div>
+
+		<h2 class="">two-part system (at least)</h2>
+		<div class="row">
+			<div class="columnOne">
+				<p>part one:</p><br>
+				<h3>the @keyframes is the animation</h3>
+				<p>part two:</p><br>
+				<h3>like transitions, we need a place to call the animation</h3>
+				<p>but first, let's learn about the animation properties<p>
+			</div>
+			<div class="columnTwo">
+				<code>selector {
+				<h3>animation-name: <em>this is where the animation gets called, ie part 2</em></h3>
+				<h3>animation-delay: <em>delays start time</em></h3>
+				<h3>animation-direction: <em>your animation can run forwards or backwards</em></h3>
+				<h3>animation-duration: <em>specifies the amount of time it takes to complete one cycle</em></h3>
+				<h3>animation-fill-mode: <em>styles the element for before and after the animation</em></h3>
+				<h3>animation-iteration-count: <em>how many times will it play?</em></h3>
+				<h3>animation-play-state: <em>is it running or paused? you can use a psuedo class to trigger an animation</em></h3>
+				<h3>animation-timing-function<em>speed curve ie ease-in, linear et al</em></h3>
+				}</code><br>
+
+				<p>let's build one together<p>
+			</div>
+		</div> 
+
+		<h4>our first animation!</h4>
+		<div id="row">
+
+			<div class="once">once</div>
+		</div>
+
+</body>
+</html>

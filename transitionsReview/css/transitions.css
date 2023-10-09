@@ -1,0 +1,56 @@
+.row {
+    margin-bottom: 25%;
+}
+
+p {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+code {
+    border: none;
+    font-size: 1.35em;
+}
+
+h3 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    /* padding-left: 5%; */
+
+}
+
+li {
+    margin-left: 15%;
+    list-style: circle;
+    font-size: 1.15em;
+}
+
+.property {
+    color: #FF0000;
+}
+
+.duration {
+    color: #50ba50;
+}
+
+.timing {
+    color: #05a5ad;
+}
+
+.delay {
+    color: #9a27a2;
+}
+
+.columnTwo {
+    transition-property: opacity;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    transition-delay: 2s;
+}
+
+.columnTwo:hover {
+    opacity: 0;
+}
+
+

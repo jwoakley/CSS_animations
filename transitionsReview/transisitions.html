@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.typekit.net/xih6dhg.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<link rel="stylesheet" href="css/transitions.css">
+
+	<title>Advanced CSS Part 2
+	</title>
+</head>
+
+<body>
+
+	<h1>Advanced CSS Part 2</h1>
+
+	<div class="sections">
+		<a href="transisitions.html">transitions review</a>
+		<a href="/animations/animations.html">animation intro</a>
+	</div>
+	
+	<a id="start" href="../index.html">home</a>
+
+	<h4>Visualizing Change - it is all about control</h4>
+
+	<h2>How to Use CSS Transitions</h2>
+	<div class="row">
+		<div class="columnOne">
+			<p>Transitions are properties that help us manipulate elemental change in CSS - These are REACTIVE, they need to be triggered. For a transition to work you need to specify at least two things:</p><br>
+			<h3>• the property you want to affect</h3>
+			<h3>• the duration of the effect</h3><br>
+			<p>We actually already started using transitions by adding a duration to our transormations, right?</p>
+		</div>
+
+		<div class="columnTwo">
+			<h2>The Transition Properties are:</h2>
+			<br>
+			<h3 class="property">transition-property:</h3>
+			<h3 class="duration">transition-duration:</h3>
+			<h3 class="timing">transition-timing-function:</h3>
+			<h3 class="delay">transition-delay:</h3>
+			<br>
+			<p>They are always written out in this order. Get in the habit of calling all four for each transition</p>	
+		</div>
+		</div>
+
+		<h2 class="property">transition-property</h2>
+		<div class="row">
+			<div class="columnTwo">
+				<code>selector {
+				<h3 class="property">transition-property: opacity;</h3>
+				<h3>transition-duration:</h3>
+				<h3>transition-timing-function:</h3>
+				<h3>transition-delay:</h3>
+			}</code>
+			</div>
+
+			<div class="columnOne">
+				<p> with the transition-property declaration we can target all the properties, or get specific, for example:</p>
+				<br>
+				<h3>• color</h3>
+				<h3>• opacity</h3>
+				<h3>• height</h3>
+				<h3>• width</h3>
+				<p>you can pretty much manipulate any property!!! if you want to add more than one property, just seperate by a comma. for example:</p>
+				<h3 class="property">transition-property: opacity, width;</h3>
+			</div>
+		</div>
+		<h2 class="duration">transition-duration</h2>
+		<div class="row">
+			<div class="columnOne">
+				<p> We are already experts at this one! the duration is simply how much time we want the transition to last</p>
+			</div>
+				<div class="columnTwo">
+					<code>selector {
+					<h3 class="property">transition-property: opacity;</h3>
+					<h3 class="duration">transition-duration: 5s</h3>
+					<h3>transition-timing-function:</h3>
+					<h3>transition-delay:</h3>
+				}</code>
+				</div>	
+			</div>
+
+		<h2 class="timing">transition-timing-function</h2>
+			<div class="row">
+				<div class="columnTwo">
+					<code>selector {
+					<h3 class="property">transition-property: opacity;</h3>
+					<h3 class="duration">transition-duration: 5s</h3>
+					<h3 class="timing">transition-timing-function: ease-out;</h3>
+					<h3>transition-delay:</h3>
+				}</code>
+				</div>	
+				<div class="columnOne">
+					<h3>ease functions: broken down</h3>
+					<p> Ease functions may seem a little overwhelming at first, but once you understand the basics you will understand their value. <br> We use these to add further nuance to our transitions (this is how we get a screen that fades to black).</p>
+					<ul>
+						<li><strong>linear:</strong> DEFAULT a constant speed</li>
+						<li><strong>ease:</strong> speeds up a little in the middle, then slows down again</li>
+						<li><strong>ease-in:</strong> starts off slow and accelerates towrds the end</li>
+						<li><strong>ease-out:</strong> starts off fast and slows to the end</li>
+						<li><strong>ease-in-out:</strong> like a doppler, slow start, fast middle, slow end</li>
+					</ul>
+				</div>	
+				</div>
+
+		<h2 class="delay">transition-delay</h2>
+			<div class="row">
+				<div class="columnOne">
+					<p>This is an easy one, we can add a delay to start measured in seconds or miliseconds</p>
+				</div>	
+				<div class="columnTwo">
+					<code>selector {
+					<h3 class="property">transition-property: opacity;</h3>
+					<h3 class="duration">transition-duration: 5s;</h3>
+					<h3 class="timing">transition-timing-function: ease-out;</h3>
+					<h3 class="delay">transition-delay: 2s;</h3>
+				}</code>
+				</div>	
+				</div>
+</body>
+</html>
